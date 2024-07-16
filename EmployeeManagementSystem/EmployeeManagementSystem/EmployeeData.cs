@@ -44,21 +44,23 @@ namespace EmployeeManagementSystem
                         while (reader.Read())
                         {
                             EmployeeData ed = new EmployeeData();
-                            ed.ID = (int)reader["id"];
+                            ed.ID = reader["id"] != DBNull.Value ? Convert.ToInt32(reader["id"]) : 0; // Assuming 'id' can be null and defaulting to 0
                             ed.EmployeeID = reader["employee_id"].ToString();
                             ed.Name = reader["full_name"].ToString();
                             ed.Gender = reader["gender"].ToString();
                             ed.Contact = reader["contact_number"].ToString();
                             ed.Position = reader["position"].ToString();
                             ed.Image = reader["image"].ToString();
-                            ed.Salary = (int)reader["salary"];
+                            ed.Salary = reader["salary"] != DBNull.Value ? Convert.ToInt32(reader["salary"]) : 0; // Assuming 'salary' can be null and defaulting to 0
                             ed.Status = reader["status"].ToString();
 
                             listdata.Add(ed);
                         }
+
                     }
-                        
-                }catch(Exception ex)
+
+                }
+                catch(Exception ex)
                 {
                     Console.WriteLine("Error: " + ex);
                 }

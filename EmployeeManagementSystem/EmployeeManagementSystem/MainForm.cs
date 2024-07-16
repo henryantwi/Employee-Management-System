@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EmployeeManagementSystem
@@ -27,7 +20,7 @@ namespace EmployeeManagementSystem
             DialogResult check = MessageBox.Show("Are you sure you want to logout?"
                 , "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(check == DialogResult.Yes)
+            if (check == DialogResult.Yes)
             {
                 Form1 loginForm = new Form1();
                 loginForm.Show();
@@ -43,7 +36,7 @@ namespace EmployeeManagementSystem
 
             Dashboard dashForm = dashboard1 as Dashboard;
 
-            if(dashForm != null)
+            if (dashForm != null)
             {
                 dashForm.RefreshData();
             }
@@ -58,7 +51,7 @@ namespace EmployeeManagementSystem
 
             AddEmployee addEmForm = addEmployee1 as AddEmployee;
 
-            if(addEmForm != null)
+            if (addEmForm != null)
             {
                 addEmForm.RefreshData();
             }
@@ -73,10 +66,15 @@ namespace EmployeeManagementSystem
 
             Salary salaryForm = salary1 as Salary;
 
-            if(salaryForm != null)
+            if (salaryForm != null)
             {
                 salaryForm.RefreshData();
             }
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }

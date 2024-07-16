@@ -45,10 +45,12 @@ namespace EmployeeManagementSystem
                             sd.Gender = reader["gender"].ToString();
                             sd.Contact = reader["contact_number"].ToString();
                             sd.Position = reader["position"].ToString();
-                            sd.Salary = (int)reader["salary"];
+                            // Safely convert the salary field to int, handling possible NULL values
+                            sd.Salary = reader["salary"] != DBNull.Value ? Convert.ToInt32(reader["salary"]) : 0;
 
                             listdata.Add(sd);
                         }
+
                     }
                 }
                 catch (Exception ex)
