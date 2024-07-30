@@ -77,10 +77,45 @@ namespace EmployeeManagementSystem
         {
 
         }
+
+        private void dashboard1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+                dashboard1.Visible = false;
+                addEmployee1.Visible = false;
+                salary1.Visible = true;
+
+                Salary salaryForm = salary1 as Salary;
+
+                if (salaryForm != null)
+                {   
+                    salaryForm.RefreshData();
+                }
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-
-
-// THATS IT FOR THIS VIDEO, THANKS FOR WATCHING!
-// SUBSCRIBE FOR MORE C# PROJECT TUTORIALS
-// THANKS : ) 

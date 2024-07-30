@@ -28,3 +28,4 @@ C:\Users\HENRY\Source\Repos\Employee-Management-System-in-CSharp\EmployeeManagem
 C:\Users\HENRY\Source\Repos\Employee-Management-System-in-CSharp\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\HENRY\Source\Repos\Employee-Management-System-in-CSharp\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.exe
 C:\Users\HENRY\Source\Repos\Employee-Management-System-in-CSharp\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb
+C:\Users\HENRY\source\repos\Employee-Management-System-in-CSharp\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.Payroll.resources
